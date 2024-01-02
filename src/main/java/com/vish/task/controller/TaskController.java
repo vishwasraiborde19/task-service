@@ -19,7 +19,7 @@ public class TaskController {
     }
 
     @GetMapping("/tasks/{id}")
-    public Task getTask(@PathVariable("id") String id){
+    public Optional<Task> getTask(@PathVariable("id") String id){
         return taskService.getTask(Integer.parseInt(id));
     }
 
@@ -34,8 +34,8 @@ public class TaskController {
     }
 
     @DeleteMapping("/tasks/{id}")
-    public Optional<Task> deleteTask(@PathVariable("id") String id){
-        return taskService.deleteTask(Integer.parseInt(id));
+    public void deleteTask(@PathVariable("id") String id){
+         taskService.deleteTask(Integer.parseInt(id));
     }
 
 }

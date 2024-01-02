@@ -10,8 +10,8 @@ public interface TaskService {
 
     public Task addTask(Task task);
     public Optional<Task> updateTask(Task task);
-    public Optional<Task> deleteTask(int taskID);
-    Task getTask(int taskID);
+    public void deleteTask(int taskID);
+    Optional<Task> getTask(int taskID);
     List<Task> getTasks();
 
 }

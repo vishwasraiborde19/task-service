@@ -1,4 +1,9 @@
 package com.vish.task.repository;
 
-public class TaskRepository {
+import com.vish.task.model.Task;
+import org.springframework.data.cassandra.repository.CassandraRepository;
+
+
+public interface TaskRepository extends CassandraRepository<Task,Long> {
+
 }
