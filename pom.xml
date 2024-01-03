@@ -9,8 +9,8 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.task</groupId>
-    <artifactId>task</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <artifactId>task-service</artifactId>
+    <version>0.0.1</version>
     <name>task</name>
     <description>Demo project for Spring Boot</description>
     <properties>

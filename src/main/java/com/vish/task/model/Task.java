@@ -18,7 +18,7 @@ public class Task {
     @PrimaryKey
     private int taskId;
     private String taskName;
-    private String plannedCompletionDate;
+    private UUID plannedCompletionDate;
     private Status status;
 
 }

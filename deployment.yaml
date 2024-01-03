@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: task-app
+  labels:
+    app: task-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: task-app
+  template:
+    metadata:
+      name: task-app
+      labels:
+        app: task-app
+    spec:
+      containers:
+        - name: task-app
+          image: task/mgmt:v2
+          imagePullPolicy: IfNotPresent
+      restartPolicy: Always
+      
